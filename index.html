@@ -1,27 +1,137 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lena.filmes</title>
-    <style>header {
-background-color: #FF0000;
-color: white;
-text-align: center;
-max-width: 800px;
-margin: 2 auto;
-padding: 16px;
-    }</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lena Filmes | Indicações de Filmes</title>
+  <style>
+    /* Estilos Gerais */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #141414;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #000000;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid #e50914;
+    }
+    header h1 {
+      color: #e50914;
+      font-size: 2.5rem;
+    }
+
+    /* Container Principal */
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    /* Grid de Filmes */
+    .movies-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    /* Card do Filme */
+    .movie-card {
+      background-color: #1f1f1f;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+    .movie-card:hover {
+      transform: translateY(-5px);
+    }
+    .movie-card img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+    .movie-info {
+      padding: 15px;
+    }
+    .movie-title {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+      color: #ffffff;
+    }
+    .movie-genre {
+      font-size: 0.85rem;
+      color: #e50914;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .movie-desc {
+      font-size: 0.9rem;
+      color: #cccccc;
+    }
+
+    /* Rodapé */
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background-color: #000000;
+      color: #777;
+    }
+  </style>
 </head>
-<body
-<header>
-<h1>lenafilmes</h1>
- <p>vou indicar filmes</p>
- </header>
- <main>
- <h2>vou indicar filmes para assistir em familia</h2>
- <p>bem vindo ao lenafilmes! aqui voce vai ver filmes para assistir com a familia</p>
- 
- </main>
+<body>
+
+  <header>
+    <h1>🎬 Lena Filmes</h1>
+    <p>As melhores indicações para a sua maratona</p>
+  </header>
+
+  <div class="container">
+    <div class="movies-grid">
+
+      <div class="movie-card">
+        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500" alt="Poster de filme">
+        <div class="movie-info">
+          <h2 class="movie-title">Interestelar</h2>
+          <p class="movie-genre">Ficção Científica / Drama</p>
+          <p class="movie-desc">Uma equipe de exploradores viaja através de um buraco de minhoca no espaço na tentativa de garantir a sobrevivência da humanidade.</p>
+        </div>
+      </div>
+
+      <div class="movie-card">
+        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=500" alt="Poster de filme">
+        <div class="movie-info">
+          <h2 class="movie-title">Spider-Man: Into the Spider-Verse</h2>
+          <p class="movie-genre">Animação / Ação</p>
+          <p class="movie-desc">Miles Morales se torna o Homem-Aranha de seu universo e precisa se juntar a outras versões de diferentes dimensões para deter uma ameaça.</p>
+        </div>
+      </div>
+
+      <div class="movie-card">
+        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500" alt="Poster de filme">
+        <div class="movie-info">
+          <h2 class="movie-title">Knives Out</h2>
+          <p class="movie-genre">Mistério / Comédia</p>
+          <p class="movie-desc">Um detetive investiga a morte misteriosa do patriarca de uma família excêntrica e conflituosa.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Lena Filmes. Feito para amantes de cinema.</p>
+  </footer>
+
 </body>
 </html>
